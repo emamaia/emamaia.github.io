@@ -30,3 +30,22 @@ nav a:hover{
     font-weight: 500;
    color: #7E459B;
 }
+
+.tamanho-fonte {
+    font-size: 30px;
+}
+
+.tamanho-card {
+    width: 18rem;
+}
+
+.imagem-cards {
+    object-fit: cover;
+    object-position: top;
+    height: 40vh;
+}
+
+.imagem-modal {
+    object-fit: cover;
+    height: 30vh;
+}

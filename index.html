@@ -70,17 +70,17 @@
             <div class="container text-center">
                 <h1>Emanuelle Maia</h1>
                 <h3 class="font-italic font-weight-light pb-2">Desenvolvedora front-end</h3>
-                <div class="d-flex justify-content-around redes-sociais">
+                <div class="d-flex flex-column flex-lg-row justify-content-around redes-sociais">
                     <a href="" target="_blank">
-                        <i class="fab fa-github-alt"></i>
+                        <i class="fab fa-github-alt mb-3"></i>
                         <span>github.com/emamaia</span>
                     </a>
                     <a href="" target="_blank">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin mb-3"></i>
                         <span>linkedin.com/in/emanuellemaia</span>
                     </a>
                     <a href="" target="_blank">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope mb-3"></i>
                         <span>emanuelle.maia@gmail.com</span>
                     </a>
                 </div>
@@ -89,46 +89,63 @@
     </header>
 
     <!-- seções - habilidades e sobre -->
-    <section>
-        <h3>Habilidades</h3>
-        <div>
-            <i class="fab fa-html5"></i>
-            <p>HTML</p>
-        </div>
-        <div>
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS</p>
-        </div>
-        <div>
-            <i class="fab fa-js"></i>
-            <p>JavaScript</p>
-        </div>
-        <div>
-            <i class="fab fa-sass"></i>
-            <p>Sass</p>
-        </div>
-        <div>
-            <i class="fas fa-book"></i>
-            <p>jQuery</p>
-        </div>
-        <div>
-            <i class="fab fa-react"></i>
-            <p>React</p>
-        </div>
-        <div>
-            <i class="fab fa-bootstrap"></i>
-            <p>Bootstrap</p>
-        </div>
-        <div>
-            <i class="fab fa-git-alt"></i>
-            <p>Git</p>
-        </div>
-        <div>
-            <i class="fas fa-tasks"></i>
-            <p>Scrum</p>
+    <section class="d-flex flex-column flex-md-row bg-roxo text-white pb-5">
+        <div class="px-5 d-flex flex-column align-items-center">
+
+            <div class="px-5 d-flex flex-column align-items-center">
+                <h3 class="w-100 text-center mt-4">Habilidades</h3>
+            </div>
+
+            <div class="text-center w-100">
+                <div class="row pt-5">
+                    <div class="col">
+                        <i class="tamanho-fonte fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="col">
+                        <i class="tamanho-fonte fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="col">
+                        <i class="tamanho-fonte fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <i class="tamanho-fonte fab fa-sass"></i>
+                        <p>Sass</p>
+                    </div>
+                    <div class="col">
+                        <i class="tamanho-fonte fas fa-book"></i>
+                        <p>jQuery</p>
+                    </div>
+                    <div class="col">
+                        <i class="tamanho-fonte fab fa-react"></i>
+                        <p>React</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <i class="tamanho-fonte fab fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="col">
+                        <i class="tamanho-fonte fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="col">
+                        <i class="tamanho-fonte fas fa-tasks"></i>
+                        <p>Scrum</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <section>
+        <section class="mt-4 px-5 text-center">
             <h3>Sobre</h3>
             <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi
@@ -139,18 +156,107 @@
     </section>
 
     <!-- cards - meus projetos -->
-    <section>
-        <h3>Portfólio</h3>
-        <!-- cards -->
-        <!-- modais -->
-        <img src="./assets/images/modal-01.jpg" alt="">
-        <img src="./assets/images/modal-02.jpg" alt="">
-        <img src="./assets/images/modal-03.jpg" alt="">
+    <section class="container text-center py-4">
+        <h3 class="mb-4">Portfólio</h3>
+
+        <div class="row justify-content-around">
+            <!-- card 01 -->
+            <div class="card tamanho-card">
+                <img class="card-img-top imagem-cards" src="./assets/images/metrô.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Linhas do metrô</h5>
+                    <p class="card-text">Projeto da semana de Git e responsividade, realizado em trio.</p>
+                    <a href="#" class="btn bg-roxo text-white" data-toggle="modal" data-target="#modal01">Veja mais</a>
+                </div>
+            </div>
+            <!-- modal card 01 -->
+            <div class="modal" tabindex="-1" role="dialog" id="modal01">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Linhas do metrô</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Projeto em trio para semana de Git, Git Hub e responsividade. Recebemos o layout, criamos html e css para home e para cada linha. </p>
+                            <img class="imagem-modal" src="./assets/images/metrô.png" alt="Imagem do projeto">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn bg-roxo text-white">Salvar mudanças</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 02 -->
+            <div class="card tamanho-card">
+                <img class="card-img-top imagem-cards" src="./assets/images/mdemaravilhosa.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">M de Maravilhosa</h5>
+                    <p class="card-text">Projeto M de Maravilhosa, criado individualmente.</p>
+                    <a href="#" class="btn bg-roxo text-white" data-toggle="modal" data-target="#modal02">Veja mais</a>
+                </div>
+            </div>
+            <!-- modal card 02 -->
+            <div class="modal" tabindex="-1" role="dialog" id="modal02">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">M de Maravilhosa</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Projeto individual. Criação de html e css para a personalidade que escolhemos, contando um pouco sua história e como ela influenciou o mundo.</p>
+                            <img  class="imagem-modal" src="./assets/images/mdemaravilhosa.png" alt="imagem home do projeto M de Maravilhosa ">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn bg-roxo text-white">Salvar mudanças</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 03 -->
+            <div class="card tamanho-card">
+                <img class="card-img-top imagem-cards" src="./assets/images/mlisttodo.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">List to do</h5>
+                    <p class="card-text">Projeto em dupla para a semana Javascript.</p>
+                    <a href="#" class="btn bg-roxo text-white" data-toggle="modal" data-target="#modal03">Veja mais</a>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="modal03">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">List to do</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Criação de lista de afazeres com html, css e Javascript. Funçõe sde adicionar tarefas, exluir, selecionar, drag e drop</p>
+                            <img class="imagem-modal" src="./assets/images/mlisttodo.png" alt="Projeto list to do">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn bg-roxo text-white">Salvar mudanças</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
     <!-- footer -->
-    <footer>
-        <small>Desenvolvido com Bootstrap por Nome enquanto aluna da<span><a href="http://reprograma.com.br/index.html"
+    <footer class="bg-roxo text-center py-1">
+        <small>Desenvolvido com Bootstrap por Nome enquanto aluna da<span><a class="text-white" href="http://reprograma.com.br/index.html"
                     target="_blank">{reprograma}</a></span> 2019</small>
     </footer>
 
