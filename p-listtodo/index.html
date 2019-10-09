@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Emana</title>
+</head>
+<body>
+    <h1 id='titulo'>
+       Emana - List to do 
+    </h1>
+
+    <section class='container__geral' id='container__geral'>
+
+       <div class="container__lista" id='container__lista'>
+            <h2 id='adicione__tarefa'>
+               Adicione uma nova tarefa
+            </h2>
+            
+            <form class='formulario' id='formulario'>
+                    <input id='input__usuario' type="text" placeholder="  Digite uma tarefa">
+                    <label for="opcoes__usuario" id='opcoes'>
+                        <select name="Tipo Tarefa" id="seletor__etiqueta">
+                            <option value="EmBranco">Escolha o tipo de tarefa</option>
+                            <option value="Mercado">Mercado</option>
+                            <option value="Farmácia">Farmácia</option>
+                            <option value="Home">Home</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </label>                   
+                    <button id='input__botao'>Add</button>
+                    <p id='msg__erro'></p>
+            </form>
+                          
+            <ul id='lista__tarefas' class= 'tarefas' >          
+        
+            </ul>
+
+            <div id='botoes'></div>
+        </div> 
+    </section> 
+
+    <script src='./js/script.js'></script>
+</body>
+</html>
+
