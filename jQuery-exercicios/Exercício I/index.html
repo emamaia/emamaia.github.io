@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Execício-formulário</title>
+</head>
+
+<body class="bg-light">
+    <div class="container" style="padding-top: 3rem!important;">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="mb-3">Evento</h4>
+                <form class="needs-validation">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="eventType">Tipo de Evento</label>
+                            <select id="eventType" class="custom-select d-block w-100">
+                                <option>-- Selecione --</option>
+                                <option>Teatro</option>
+                                <option>Cinema</option>
+                                <option>Debate Literário</option>
+                                <option>Dança</option>
+                                <option>Artes visuais e exposições</option>
+                                <option>Música</option>
+                            </select>
+                        </div>
+                        <div class="teatro cinema debate danca arte musica col-md-6 mb-3 sumir">
+                            <label for="title">Título</label>
+                            <input type="text" class="form-control" id="title">
+                        </div>
+                    </div>
+
+                    <div class="sumir-d teatro cinema danca arte musica mb-3 sumir">
+                        <label for="synopsis">Sinopse</label>
+                        <div class="input-group">
+                            <textarea class="form-control" id="synopsis"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row sumir">
+                        <div class="teatro sumir-c sumir-d sumir-dan sumir-a sumir-m col-md-4 mb-3">
+                            <label for="writer">Texto</label>
+                            <input type="text" class="form-control" id="writer">
+                        </div>
+
+                        <div class="danca sumir-t sumir-c sumir-d sumir-a sumir-m col-md-4 mb-3">
+                            <label for="conception">Concepção</label>
+                            <input type="text" class="form-control" id="conception">
+                        </div>
+
+                        <div class="teatro cinema sumir-d sumir-dan sumir-a sumir-m col-md-4 mb-3">
+                            <label for="director">Direção</label>
+                            <input type="text" class="form-control" id="director">
+                        </div>
+                    </div>
+
+                    <div class="row sumir">
+                        <div class="debate sumir-t sumir-c sumir-dan sumir-a sumir-m col-md-6 mb-3">
+                            <label for="book">Livro/Artigo/Brochura</label>
+                            <input type="text" class="form-control" id="book">
+                        </div>
+
+                        <div class="debate sumir-t sumir-c sumir-dan sumir-a sumir-m col-md-3 mb-3">
+                            <label for="author">Autor</label>
+                            <input type="text" class="form-control" id="author">
+                        </div>
+
+                        <div class="debate sumir-t sumir-c sumir-dan sumir-a sumir-m col-md-3 mb-3">
+                            <label for="moderator">Moderador</label>
+                            <input type="text" class="form-control" id="moderator">
+                        </div>
+                    </div>
+
+                    <div class="row sumir">
+                        <div class="danca arte sumir-t sumir-c sumir-d sumir-m col-md-4 mb-3">
+                            <label for="curator">Curadoria</label>
+                            <input type="text" class="form-control" id="curator">
+                        </div>
+
+                        <div class="musica sumir-t sumir-c sumir-d sumir-dan sumir-a col-md-6 mb-3">
+                            <label for="band">Artista/Banda</label>
+                            <input type="text" class="form-control" id="band">
+                        </div>
+                    </div>
+
+                    <div class="teatro cinema sumir-d sumir-dan sumir-a sumir-m mb-3 sumir">
+                        <label for="cast">Elenco</label>
+                        <div class="input-group">
+                            <textarea class="form-control" id="cast"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="danca arte sumir-t sumir-c sumir-d sumir-m mb-3 sumir">
+                        <label for="guests">Artistas Convidados</label>
+                        <div class="input-group">
+                            <textarea class="form-control" id="guests"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row sumir">
+                        <div class="teatro cinema debate sumir-a sumir-m sumir-dan col-md-2 mb-3">
+                            <label for="duration">Duração</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="duration">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">min</span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="teatro cinema debate danca arte musica col-md-4 mb-3">
+                            <label for="classification">Classificação Indicativa</label>
+                            <select class="custom-select d-block w-100" id="classification">
+                                <option value="">-- Selecione --</option>
+                                <option>Livre</option>
+                                <option>12</option>
+                                <option>14</option>
+                                <option>16</option>
+                                <option>18</option>
+                            </select>
+                        </div>
+                        <div class="teatro cinema musica sumir-d sumir-dan sumir-a entrada col-md-4 mb-3">
+                            <label for="price">Valor da Entrada</label>
+                            <input type="number" class="form-control" id="price">
+                        </div>
+
+                        <div class="teatro cinema debate danca arte musica custom-control form-check-inline custom-checkbox" style="display:inline-flex;">
+                            <input type="checkbox" class="check custom-control-input" id="free">
+                            <label class="custom-control-label" for="free">Entrada Franca</label>
+                        </div>
+
+                    </div>
+
+                    <hr class="mb-4">
+                    <button class="btn btn-primary" type="submit">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
