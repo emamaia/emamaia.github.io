@@ -1,4 +1,15 @@
 
+nav{
+    height: 80px;
+}
+
+.img-home{
+  
+    object-fit: cover;
+    object-position: 0 70%
+   ;
+}
+
 .bg-roxo {
     background-color: #7E459B;
 }
@@ -48,4 +59,8 @@ nav a:hover{
 .imagem-modal {
     object-fit: cover;
     height: 30vh;
+}
+
+.modal-span{
+    font-style: italic;
 }
